@@ -1,0 +1,137 @@
+#+TITLE:     Magit Cheatsheet
+#+OPTIONS:   H:3 author:nil num:nil toc:t \n:t @:t ::nil |:t ^:t *:t TeX:t LaTeX:nil
+#+COLUMNS:   %225ITEM %TAGS %PRIORITY %TODO
+
+
+
+
+* Buffers
+
+| M-x magit-status | Magit's status buffer  | The main entry point to Magit, and the context where the commands described in this cheatsheet are meant to be executed. Probably a good idea to bind magit-status to a key. |
+| $                | magit-process buffer   | Behind-the-scenes. Displays the git command and its output.                                                                                                                                 |
+| g                | reload status buffer   | Necessary to update an existing Magit status buffer after saving a file in emacs, or after making changes to repo outside of emacs.                                                         |
+
+
+
+* Section Visibility
+
+| TAB       | Toggle visibility of current section                                    |         |
+| S-TAB     | Toggle visibility of current section and its children                   |         |
+| 1,2,3,4   | Expand current section to the corresponding level of detail - 1, 2, 3 or 4 | e.g., 4 will show all detail for the current section. |
+| M-1,2,3,4 | Expand all sections to the corresponding level of detail - 1, 2, 3 or 4 | e.g., M-4 will show all detail for the entire buffer. |
+
+
+* Untracked Files
+
+| s         | Add untracked file to staging area                  |         |
+| i         | Add file to .gitignore                              |         |
+| C-u i     | Prompt for file/directory to add to .gitignore      |         |
+| I         | Add file to .git/info/exclude instead of .gitignore |         |
+
+
+* Staging and Committing
+
+| s         | Stage current hunk            | If point is in diff header, will stage all hunks belonging to current diff. If a region is active, only lines in that region will be staged. This is a distinct improvement on the conventional 'git add -p', the splitting mechanics of which are... 'imperfect'. |
+| u         | Unstage current hunk          | As with s command, only in reverse: diff headers and regions provide a corresponding context to the unstage action.                                                                                                                                                |
+| S         | Stage all hunks               |                                                                                                                                                                                                                                                                      |
+| U         | Unstage all hunks             |                                                                                                                                                                                                                                                                      |
+| k         | Discard uncommitted changes   | As with s command.                                                                                                                                                                                                                                                 |
+| c         | Prepare for commit            | Pops up *magit-log-edit* buffer. to allow you to enter your commit message.                                                                                                                                                |
+| C-c C-c   | Execute commit                | Actually triggers commit action. Fire this inside the *magit-log-edit* commit message buffer. To postpone the commit for later, just C-x b to a different buffer and come back to this buffer when you're ready,         |
+| C-c C-a   | Make the next commit an amend |                                                                                                                                                                                                                                                                      |
+
+
+* History
+
+| l         | History                                             | Shows terse history for repository.                                                                                  |
+| L         | Verbose history                                     |                                                                                                                        |
+| C-u l     | History segment                                     | Will prompt for beginning and end points.                                                                            |
+| RET       | Inspect commit                                      | Shows full information for commit and move point into the new buffer.                                                |
+| a         | Stage current commit on your current branch         | Useful to cherrypick changes while browsing an alternative branch. Cherrypicked changes need to be committed manually. |
+| A         | Commit current commit on your current branch        | As with 'a', but will automatically commit changes when there aren't any conflicts.                                    |
+| C-w       | Copy sha1 of current commit into kill ring          |                                                                                                                        |
+| =         | Show differences between current and marked commits |                                                                                                                        |
+| ..        | Mark current commit                                 |                                                                                                                        |
+| .         | Unmark current commit if marked                     |                                                                                                                        |
+| C-u ..    | Unmark marked commit from anywhere                  |                                                                                                                        |
+
+
+
+* Reflogs
+
+| h         | Browse reflog from HEAD         | Reflog buffer works just like History buffer described above. |
+| H         | Browse reflog from chosen point |                                                               |
+
+
+
+* Diffing
+
+| d         | Show changes between working tree and HEAD       |                                                                        |
+| D         | Show changes between two arbitrary revisions     |                                                                        |
+| a         | Apply current changes to working tree            | Change-selection works as described in 'Staging and Committing' above. |
+| v         | Apply current changes to working tree in reverse |                                                                        |
+
+
+* Tagging
+
+| t         | Make lightweight tag  |                                                          |
+| T         | Prepare annotated tag | Launches *magit-log-edit* buffer for writing annotation. |
+| C-c C-c   | Commit annotated tag  | Actually triggers annotated tag action.                  |
+
+
+
+* Resetting
+
+| x         | Reset your current head to chosen revision                         | No changes will be made to working tree or staging area. Typing x while point is in a line describing a commit will offer this commit as the default revision to reset to. |
+| X         | Reset working tree and staging area to most recent committed state | Destructive! Will discard all local modifications.                                                                                                                         |
+
+
+
+* Stashing
+
+| z         | Create new stash                    | Stashes are listed in the status buffer.                 |
+| Z         | Create new stash and maintain state | Leaves current changes in working tree and staging area. |
+| RET       | View stash                          |                                                          |
+| a         | Apply stash                         |                                                          |
+| A         | Pop stash                           |                                                          |
+| k         | Drop stash                          |                                                          |
+
+
+
+* Branching
+
+| b         | Switch to different branch      | Current branch is indicated in header of status buffer. |
+| B         | Create and switch to new branch |                                                         | 
+
+
+* Wazzup
+          
+| w         | Show summary of how other branches relate to current branch |         |
+| i         | Toggle ignore branch                                        |         |
+| C-u w     | Show all branches including ignored ones                    |         | 
+
+* Merging
+| m         | Initiate manual merge    | Applies all changes to working area and index, without committing.              |
+| M         | Initiate automatic merge | Applies all changes to working area and index. Commits changes immediately.     |
+
+* Rebasing
+| R         | Initiate or continue a rebase         |                             |
+
+* Rewriting
+| r s       | Start a rewrite                            |         |
+| v         | Revert a given commit                      |         |
+| r t       | Remove bookkeeping information from buffer |         |
+| r a       | Abort rewriting                       |                             |
+| r f       | Finish rewriting                      | Applies all unused commits. |
+| r *       | Toggle the * mark on a pending commit |                             |
+| r ..      | Toggle the . mark on a pending commit |                             |
+
+* Pushing and Pulling
+| P         | git push                                | Uses default remote repository. |
+| C-u P     | git push to specified remote repository |                                 |
+| f         | git remote update                       |                                 |
+| F         | git pull                                |                                 |
+
+* Interfacing with Subversion
+| N r       | git svn rebase |         |
+| N c       | git svn dcommit |         |
