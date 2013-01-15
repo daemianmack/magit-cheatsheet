@@ -30,7 +30,7 @@
 (setq org-export-html-preamble "
 
 <div class=\"preamble\">This is a distillation of the <a
-href=\"http://philjackson.github.com/magit/magit.html">Magit user
+href=\"http://magit.github.com/magit/magit.html\">Magit user
 manual</a>, which has more detail than this quick cheatsheet
 provides. Read the user manual! Blogpost containing materials to
 regenerate this cheatsheet from scratch <a href="http://daemianmack.com/2009/09/24/magit-cheatsheet/">here</a>.</div>
