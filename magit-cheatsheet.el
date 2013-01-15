@@ -33,7 +33,7 @@
 href=\"http://magit.github.com/magit/magit.html\">Magit user
 manual</a>, which has more detail than this quick cheatsheet
 provides. Read the user manual! Blogpost containing materials to
-regenerate this cheatsheet from scratch <a href="http://daemianmack.com/2009/09/24/magit-cheatsheet/">here</a>.</div>
+regenerate this cheatsheet from scratch <a href="http://daemianmack.com/?p=84">here</a>.</div>
 
 
 ")
