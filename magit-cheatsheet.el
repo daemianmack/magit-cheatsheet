@@ -26,7 +26,7 @@
 
 
 ;; Insert preamble pointing to the manual proper and my blogpost so
-user can regenerate this however they like.
+;; user can regenerate this however they like.
 (setq org-export-html-preamble "
 
 <div class=\"preamble\">This is a distillation of the <a
