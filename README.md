@@ -1,3 +1,5 @@
+Magit Cheatsheet
+----------------
 magit is an emacs mode for git, and is crazy awesome. I've distilled the Magit User Manual into a command-centric cheatsheet for my own purposes. 
 
 The upstream magit project updates itself every so often. If you catch it before I do, please fork and patch!
