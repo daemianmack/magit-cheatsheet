@@ -12,3 +12,7 @@ This project contains...
 
 3. A utility .el file. In order to get org-mode to export nicely, I had to add two user variables to my .emacs, along with a macro I used to quick-replace the TD elements with the classes they need. 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/daemianmack/magit-cheatsheet/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
