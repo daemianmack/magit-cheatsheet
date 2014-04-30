@@ -130,6 +130,7 @@
 * Pushing and Pulling
 | P         | git push                                | Uses default remote repository. |
 | C-u P     | git push to specified remote repository |                                 |
+| C-u C-u P | git push to specified remote as specified branch |                        |
 | f         | git remote update                       |                                 |
 | F         | git pull                                |                                 |
 
