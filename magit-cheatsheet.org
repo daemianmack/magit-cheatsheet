@@ -101,14 +101,14 @@
 * Branching
 
 | b         | Switch to different branch      | Current branch is indicated in header of status buffer. |
-| B         | Create and switch to new branch |                                                         | 
+| B         | Create and switch to new branch |                                                         |
 
 
 * Wazzup
-          
+
 | w         | Show summary of how other branches relate to current branch |         |
 | i         | Toggle ignore branch                                        |         |
-| C-u w     | Show all branches including ignored ones                    |         | 
+| C-u w     | Show all branches including ignored ones                    |         |
 
 * Merging
 | m         | Initiate manual merge    | Applies all changes to working area and index, without committing.              |
@@ -116,6 +116,7 @@
 
 * Rebasing
 | R         | Initiate or continue a rebase         |                             |
+| E         | Initiate an interactive rebase        |                             |
 
 * Rewriting
 | r s       | Start a rewrite                            |         |
