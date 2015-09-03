@@ -1,3 +1,12 @@
+This cheatsheet is for **version 1** of Magit and many things have
+changed considerably in **version 2**, including the key bindings.  If
+you are using version 2 (which you should), then instead head over to
+the new [homepage](http://magit.vc), which among other things features
+a [new manual](http://magit.vc/manual/magit) and a
+[semi-official refcard](http://magit.vc/manual/magit-refcard.pdf.  If
+you are updating from version 1 to 2, then you should also read the
+[update instructions](http://magit.vc/manual/magit/Installation.html).
+
 Magit Cheatsheet
 ----------------
 magit is an emacs mode for git, and is crazy awesome. I've distilled the Magit User Manual into a command-centric cheatsheet for my own purposes. 
