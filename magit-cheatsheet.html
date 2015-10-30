@@ -1,66 +1,14 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Magit Cheatsheet</title>
-<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
-<meta name="title" content="Magit Cheatsheet"/>
-<meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2013-01-15 16:02:44 EST"/>
-<meta name="author" content="daemian mack"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+<!-- 2015-10-30 Fri 14:12 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
-  html { font-family: Times, serif; font-size: 12pt; }
-  .title  { text-align: center; }
-  .todo   { color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #add8e6; font-weight:normal }
-  .target { }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
-  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
-  .center {margin-left:auto; margin-right:auto; text-align:center;}
-  p.verse { margin-left: 3% }
-  pre {
-	border: 1pt solid #AEBDCC;
-	background-color: #F3F5F7;
-	padding: 5pt;
-	font-family: courier, monospace;
-        font-size: 90%;
-        overflow:auto;
-  }
-  table { border-collapse: collapse; }
-  td, th { vertical-align: top;  }
-  th.right  { text-align:center;  }
-  th.left   { text-align:center;   }
-  th.center { text-align:center; }
-  td.right  { text-align:right;  }
-  td.left   { text-align:left;   }
-  td.center { text-align:center; }
-  dt { font-weight: bold; }
-  div.figure { padding: 0.5em; }
-  div.figure p { text-align: center; }
-  div.inlinetask {
-    padding:10px;
-    border:2px solid gray;
-    margin:10px;
-    background: #ffffcc;
-  }
-  textarea { overflow-x: auto; }
-  .linenr { font-size:smaller }
-  .code-highlighted {background-color:#ffff00;}
-  .org-info-js_info-navigation { border-style:none; }
-  #org-info-js_console-label { font-size:10px; font-weight:bold;
-                               white-space:nowrap; }
-  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
-                                 font-weight:bold; }
-  /*]]>*/-->
-</style><style type="text/css">
-
   html {font-family: Times, serif; font-size: 90%;}
   .preamble {font-variant: italic; margin-bottom:40px;}
   .title {text-align: center;}
@@ -81,9 +29,33 @@
   td.command, td.description {white-space: nowrap;}
   td.command {font-family:monospace; font-size: 130%; font-weight: 600; width:10em;}
   td.notes {color: #666; font-variant: italic;}
-
+  /*]]>*/-->
 </style>
 <script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
 <!--/*--><![CDATA[/*><!--*/
  function CodeHighlightOn(elem, id)
  {
@@ -105,30 +77,29 @@
  }
 /*]]>*///-->
 </script>
-
 </head>
 <body>
 
-<div id="preamble">
-
-
-<div class="preamble">This is a distillation of the <a
-href="http://magit.github.com/magit/magit.html">Magit user
-manual</a>, which has more detail than this quick cheatsheet
-provides. Read the user manual! Blogpost containing materials to
-regenerate this cheatsheet from scratch <a href=
-</div>
-
+  <div class="preamble">
+    <h1 class="title">THIS CHEATSHEET IS OBSOLETE AS OF MAGIT V2</h2>
+    <p>
+      This cheatsheet is for <b>version 1</b> of Magit and many things
+      have changed considerably in <b>version 2</b>, including the key
+      bindings.  If you are using version 2 (which you should), then
+      instead head over to the
+      new <a href="http://magit.vc/">homepage</a>, which among other
+      things features a <a href="http://magit.vc/manual/magit">new
+        manual</a> and
+      a <a href="http://magit.vc/manual/magit-refcard.pdf">semi-official
+        refcard</a>.  If you are updating from version 1 to 2, then you
+      should also read
+      the <a href="http://magit.vc/manual/magit/Installation.html">update
+        instructions</a>.
+    </p>
+  </div>
+  
 <div id="content">
 <h1 class="title">Magit Cheatsheet</h1>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p>
-<p><br/>
-</p>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
@@ -154,441 +125,756 @@ regenerate this cheatsheet from scratch <a href=
 </div>
 </div>
 
-<div id="outline-container-1" class="outline-2">
+
+
+
+<div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1">Buffers</h2>
 <div class="outline-text-2" id="text-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">M-x magit-status</td><td class="left">Magit's status buffer</td><td class="left">The main entry point to Magit, and the context where the commands described in this cheatsheet are meant to be executed. Probably a good idea to bind magit-status to a key.</td></tr>
-<tr><td class="left">$</td><td class="left">magit-process buffer</td><td class="left">Behind-the-scenes. Displays the git command and its output.</td></tr>
-<tr><td class="left">g</td><td class="left">reload status buffer</td><td class="left">Necessary to update an existing Magit status buffer after saving a file in emacs, or after making changes to repo outside of emacs.</td></tr>
+<tr>
+<td class="command">M-x magit-status</td>
+<td class="description">Magit's status buffer</td>
+<td class="notes">The main entry point to Magit, and the context where the commands described in this cheatsheet are meant to be executed. Probably a good idea to bind magit-status to a key.</td>
+</tr>
+
+<tr>
+<td class="command">$</td>
+<td class="description">magit-process buffer</td>
+<td class="notes">Behind-the-scenes. Displays the git command and its output.</td>
+</tr>
+
+<tr>
+<td class="command">g</td>
+<td class="description">reload status buffer</td>
+<td class="notes">Necessary to update an existing Magit status buffer after saving a file in emacs, or after making changes to repo outside of emacs.</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-2" class="outline-2">
+
+
+<div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2">Section Visibility</h2>
 <div class="outline-text-2" id="text-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">TAB</td><td class="left">Toggle visibility of current section</td><td class="left"></td></tr>
-<tr><td class="left">S-TAB</td><td class="left">Toggle visibility of current section and its children</td><td class="left"></td></tr>
-<tr><td class="left">1,2,3,4</td><td class="left">Expand current section to the corresponding level of detail - 1, 2, 3 or 4</td><td class="left">e.g., 4 will show all detail for the current section.</td></tr>
-<tr><td class="left">M-1,2,3,4</td><td class="left">Expand all sections to the corresponding level of detail - 1, 2, 3 or 4</td><td class="left">e.g., M-4 will show all detail for the entire buffer.</td></tr>
+<tr>
+<td class="command">TAB</td>
+<td class="description">Toggle visibility of current section</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">S-TAB</td>
+<td class="description">Toggle visibility of current section and its children</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">1,2,3,4</td>
+<td class="description">Expand current section to the corresponding level of detail - 1, 2, 3 or 4</td>
+<td class="notes">e.g., 4 will show all detail for the current section.</td>
+</tr>
+
+<tr>
+<td class="command">M-1,2,3,4</td>
+<td class="description">Expand all sections to the corresponding level of detail - 1, 2, 3 or 4</td>
+<td class="notes">e.g., M-4 will show all detail for the entire buffer.</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-3" class="outline-2">
+
+<div id="outline-container-sec-3" class="outline-2">
 <h2 id="sec-3">Untracked Files</h2>
 <div class="outline-text-2" id="text-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">s</td><td class="left">Add untracked file to staging area</td><td class="left"></td></tr>
-<tr><td class="left">i</td><td class="left">Add file to .gitignore</td><td class="left"></td></tr>
-<tr><td class="left">C-u i</td><td class="left">Prompt for file/directory to add to .gitignore</td><td class="left"></td></tr>
-<tr><td class="left">I</td><td class="left">Add file to .git/info/exclude instead of .gitignore</td><td class="left"></td></tr>
+<tr>
+<td class="command">s</td>
+<td class="description">Add untracked file to staging area</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">i</td>
+<td class="description">Add file to .gitignore</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">C-u i</td>
+<td class="description">Prompt for file/directory to add to .gitignore</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">I</td>
+<td class="description">Add file to .git/info/exclude instead of .gitignore</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-4" class="outline-2">
+
+<div id="outline-container-sec-4" class="outline-2">
 <h2 id="sec-4">Staging and Committing</h2>
 <div class="outline-text-2" id="text-4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">s</td><td class="left">Stage current hunk</td><td class="left">If point is in diff header, will stage all hunks belonging to current diff. If a region is active, only lines in that region will be staged. This is a distinct improvement on the conventional 'git add -p', the splitting mechanics of which are&hellip; 'imperfect'.</td></tr>
-<tr><td class="left">u</td><td class="left">Unstage current hunk</td><td class="left">As with s command, only in reverse: diff headers and regions provide a corresponding context to the unstage action.</td></tr>
-<tr><td class="left">S</td><td class="left">Stage all hunks</td><td class="left"></td></tr>
-<tr><td class="left">U</td><td class="left">Unstage all hunks</td><td class="left"></td></tr>
-<tr><td class="left">k</td><td class="left">Discard uncommitted changes</td><td class="left">As with s command.</td></tr>
-<tr><td class="left">c</td><td class="left">Prepare for commit</td><td class="left">Pops up <b>magit-log-edit</b> buffer. to allow you to enter your commit message.</td></tr>
-<tr><td class="left">C-c C-c</td><td class="left">Execute commit</td><td class="left">Actually triggers commit action. Fire this inside the <b>magit-log-edit</b> commit message buffer. To postpone the commit for later, just C-x b to a different buffer and come back to this buffer when you're ready,</td></tr>
-<tr><td class="left">C-c C-a</td><td class="left">Make the next commit an amend</td><td class="left"></td></tr>
+<tr>
+<td class="command">s</td>
+<td class="description">Stage current hunk</td>
+<td class="notes">If point is in diff header, will stage all hunks belonging to current diff. If a region is active, only lines in that region will be staged. This is a distinct improvement on the conventional 'git add -p', the splitting mechanics of which are&#x2026; 'imperfect'.</td>
+</tr>
+
+<tr>
+<td class="command">u</td>
+<td class="description">Unstage current hunk</td>
+<td class="notes">As with s command, only in reverse: diff headers and regions provide a corresponding context to the unstage action.</td>
+</tr>
+
+<tr>
+<td class="command">S</td>
+<td class="description">Stage all hunks</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">U</td>
+<td class="description">Unstage all hunks</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">k</td>
+<td class="description">Discard uncommitted changes</td>
+<td class="notes">As with s command.</td>
+</tr>
+
+<tr>
+<td class="command">c</td>
+<td class="description">Prepare for commit</td>
+<td class="notes">Pops up <b>magit-log-edit</b> buffer. to allow you to enter your commit message.</td>
+</tr>
+
+<tr>
+<td class="command">C-c C-c</td>
+<td class="description">Execute commit</td>
+<td class="notes">Actually triggers commit action. Fire this inside the <b>magit-log-edit</b> commit message buffer. To postpone the commit for later, just C-x b to a different buffer and come back to this buffer when you're ready,</td>
+</tr>
+
+<tr>
+<td class="command">C-c C-a</td>
+<td class="description">Make the next commit an amend</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-5" class="outline-2">
+
+<div id="outline-container-sec-5" class="outline-2">
 <h2 id="sec-5">History</h2>
 <div class="outline-text-2" id="text-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">l</td><td class="left">History</td><td class="left">Shows terse history for repository.</td></tr>
-<tr><td class="left">L</td><td class="left">Verbose history</td><td class="left"></td></tr>
-<tr><td class="left">C-u l</td><td class="left">History segment</td><td class="left">Will prompt for beginning and end points.</td></tr>
-<tr><td class="left">RET</td><td class="left">Inspect commit</td><td class="left">Shows full information for commit and move point into the new buffer.</td></tr>
-<tr><td class="left">a</td><td class="left">Stage current commit on your current branch</td><td class="left">Useful to cherrypick changes while browsing an alternative branch. Cherrypicked changes need to be committed manually.</td></tr>
-<tr><td class="left">A</td><td class="left">Commit current commit on your current branch</td><td class="left">As with 'a', but will automatically commit changes when there aren't any conflicts.</td></tr>
-<tr><td class="left">C-w</td><td class="left">Copy sha1 of current commit into kill ring</td><td class="left"></td></tr>
-<tr><td class="left">=</td><td class="left">Show differences between current and marked commits</td><td class="left"></td></tr>
-<tr><td class="left">..</td><td class="left">Mark current commit</td><td class="left"></td></tr>
-<tr><td class="left">.</td><td class="left">Unmark current commit if marked</td><td class="left"></td></tr>
-<tr><td class="left">C-u ..</td><td class="left">Unmark marked commit from anywhere</td><td class="left"></td></tr>
+<tr>
+<td class="command">l</td>
+<td class="description">History</td>
+<td class="notes">Shows terse history for repository.</td>
+</tr>
+
+<tr>
+<td class="command">L</td>
+<td class="description">Verbose history</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">C-u l</td>
+<td class="description">History segment</td>
+<td class="notes">Will prompt for beginning and end points.</td>
+</tr>
+
+<tr>
+<td class="command">RET</td>
+<td class="description">Inspect commit</td>
+<td class="notes">Shows full information for commit and move point into the new buffer.</td>
+</tr>
+
+<tr>
+<td class="command">a</td>
+<td class="description">Stage current commit on your current branch</td>
+<td class="notes">Useful to cherrypick changes while browsing an alternative branch. Cherrypicked changes need to be committed manually.</td>
+</tr>
+
+<tr>
+<td class="command">A</td>
+<td class="description">Commit current commit on your current branch</td>
+<td class="notes">As with 'a', but will automatically commit changes when there aren't any conflicts.</td>
+</tr>
+
+<tr>
+<td class="command">C-w</td>
+<td class="description">Copy sha1 of current commit into kill ring</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">=</td>
+<td class="description">Show differences between current and marked commits</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">..</td>
+<td class="description">Mark current commit</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">.</td>
+<td class="description">Unmark current commit if marked</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">C-u ..</td>
+<td class="description">Unmark marked commit from anywhere</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-6" class="outline-2">
+
+
+<div id="outline-container-sec-6" class="outline-2">
 <h2 id="sec-6">Reflogs</h2>
 <div class="outline-text-2" id="text-6">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">h</td><td class="left">Browse reflog from HEAD</td><td class="left">Reflog buffer works just like History buffer described above.</td></tr>
-<tr><td class="left">H</td><td class="left">Browse reflog from chosen point</td><td class="left"></td></tr>
+<tr>
+<td class="command">h</td>
+<td class="description">Browse reflog from HEAD</td>
+<td class="notes">Reflog buffer works just like History buffer described above.</td>
+</tr>
+
+<tr>
+<td class="command">H</td>
+<td class="description">Browse reflog from chosen point</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-7" class="outline-2">
+
+
+<div id="outline-container-sec-7" class="outline-2">
 <h2 id="sec-7">Diffing</h2>
 <div class="outline-text-2" id="text-7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">d</td><td class="left">Show changes between working tree and HEAD</td><td class="left"></td></tr>
-<tr><td class="left">D</td><td class="left">Show changes between two arbitrary revisions</td><td class="left"></td></tr>
-<tr><td class="left">a</td><td class="left">Apply current changes to working tree</td><td class="left">Change-selection works as described in 'Staging and Committing' above.</td></tr>
-<tr><td class="left">v</td><td class="left">Apply current changes to working tree in reverse</td><td class="left"></td></tr>
+<tr>
+<td class="command">d</td>
+<td class="description">Show changes between working tree and HEAD</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">D</td>
+<td class="description">Show changes between two arbitrary revisions</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">a</td>
+<td class="description">Apply current changes to working tree</td>
+<td class="notes">Change-selection works as described in 'Staging and Committing' above.</td>
+</tr>
+
+<tr>
+<td class="command">v</td>
+<td class="description">Apply current changes to working tree in reverse</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-8" class="outline-2">
+
+<div id="outline-container-sec-8" class="outline-2">
 <h2 id="sec-8">Tagging</h2>
 <div class="outline-text-2" id="text-8">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">t</td><td class="left">Make lightweight tag</td><td class="left"></td></tr>
-<tr><td class="left">T</td><td class="left">Prepare annotated tag</td><td class="left">Launches <b>magit-log-edit</b> buffer for writing annotation.</td></tr>
-<tr><td class="left">C-c C-c</td><td class="left">Commit annotated tag</td><td class="left">Actually triggers annotated tag action.</td></tr>
+<tr>
+<td class="command">t</td>
+<td class="description">Make lightweight tag</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">T</td>
+<td class="description">Prepare annotated tag</td>
+<td class="notes">Launches <b>magit-log-edit</b> buffer for writing annotation.</td>
+</tr>
+
+<tr>
+<td class="command">C-c C-c</td>
+<td class="description">Commit annotated tag</td>
+<td class="notes">Actually triggers annotated tag action.</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-9" class="outline-2">
+
+
+<div id="outline-container-sec-9" class="outline-2">
 <h2 id="sec-9">Resetting</h2>
 <div class="outline-text-2" id="text-9">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">x</td><td class="left">Reset your current head to chosen revision</td><td class="left">No changes will be made to working tree or staging area. Typing x while point is in a line describing a commit will offer this commit as the default revision to reset to.</td></tr>
-<tr><td class="left">X</td><td class="left">Reset working tree and staging area to most recent committed state</td><td class="left">Destructive! Will discard all local modifications.</td></tr>
+<tr>
+<td class="command">x</td>
+<td class="description">Reset your current head to chosen revision</td>
+<td class="notes">No changes will be made to working tree or staging area. Typing x while point is in a line describing a commit will offer this commit as the default revision to reset to.</td>
+</tr>
+
+<tr>
+<td class="command">X</td>
+<td class="description">Reset working tree and staging area to most recent committed state</td>
+<td class="notes">Destructive! Will discard all local modifications.</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-10" class="outline-2">
+
+
+<div id="outline-container-sec-10" class="outline-2">
 <h2 id="sec-10">Stashing</h2>
 <div class="outline-text-2" id="text-10">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">z</td><td class="left">Create new stash</td><td class="left">Stashes are listed in the status buffer.</td></tr>
-<tr><td class="left">Z</td><td class="left">Create new stash and maintain state</td><td class="left">Leaves current changes in working tree and staging area.</td></tr>
-<tr><td class="left">RET</td><td class="left">View stash</td><td class="left"></td></tr>
-<tr><td class="left">a</td><td class="left">Apply stash</td><td class="left"></td></tr>
-<tr><td class="left">A</td><td class="left">Pop stash</td><td class="left"></td></tr>
-<tr><td class="left">k</td><td class="left">Drop stash</td><td class="left"></td></tr>
+<tr>
+<td class="command">z</td>
+<td class="description">Create new stash</td>
+<td class="notes">Stashes are listed in the status buffer.</td>
+</tr>
+
+<tr>
+<td class="command">Z</td>
+<td class="description">Create new stash and maintain state</td>
+<td class="notes">Leaves current changes in working tree and staging area.</td>
+</tr>
+
+<tr>
+<td class="command">RET</td>
+<td class="description">View stash</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">a</td>
+<td class="description">Apply stash</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">A</td>
+<td class="description">Pop stash</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">k</td>
+<td class="description">Drop stash</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-11" class="outline-2">
+
+
+<div id="outline-container-sec-11" class="outline-2">
 <h2 id="sec-11">Branching</h2>
 <div class="outline-text-2" id="text-11">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p><br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">b</td><td class="left">Switch to different branch</td><td class="left">Current branch is indicated in header of status buffer.</td></tr>
-<tr><td class="left">B</td><td class="left">Create and switch to new branch</td><td class="left"></td></tr>
+<tr>
+<td class="command">b</td>
+<td class="description">Switch to different branch</td>
+<td class="notes">Current branch is indicated in header of status buffer.</td>
+</tr>
+
+<tr>
+<td class="command">B</td>
+<td class="description">Create and switch to new branch</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p>
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-12" class="outline-2">
+
+<div id="outline-container-sec-12" class="outline-2">
 <h2 id="sec-12">Wazzup</h2>
 <div class="outline-text-2" id="text-12">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
-<p>          <br/>
-</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">w</td><td class="left">Show summary of how other branches relate to current branch</td><td class="left"></td></tr>
-<tr><td class="left">i</td><td class="left">Toggle ignore branch</td><td class="left"></td></tr>
-<tr><td class="left">C-u w</td><td class="left">Show all branches including ignored ones</td><td class="left"></td></tr>
+<tr>
+<td class="command">w</td>
+<td class="description">Show summary of how other branches relate to current branch</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">i</td>
+<td class="description">Toggle ignore branch</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">C-u w</td>
+<td class="description">Show all branches including ignored ones</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-13" class="outline-2">
+<div id="outline-container-sec-13" class="outline-2">
 <h2 id="sec-13">Merging</h2>
 <div class="outline-text-2" id="text-13">
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">m</td><td class="left">Initiate manual merge</td><td class="left">Applies all changes to working area and index, without committing.</td></tr>
-<tr><td class="left">M</td><td class="left">Initiate automatic merge</td><td class="left">Applies all changes to working area and index. Commits changes immediately.</td></tr>
+<tr>
+<td class="command">m</td>
+<td class="description">Initiate manual merge</td>
+<td class="notes">Applies all changes to working area and index, without committing.</td>
+</tr>
+
+<tr>
+<td class="command">M</td>
+<td class="description">Initiate automatic merge</td>
+<td class="notes">Applies all changes to working area and index. Commits changes immediately.</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-14" class="outline-2">
+<div id="outline-container-sec-14" class="outline-2">
 <h2 id="sec-14">Rebasing</h2>
 <div class="outline-text-2" id="text-14">
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">R</td><td class="left">Initiate or continue a rebase</td><td class="left"></td></tr>
+<tr>
+<td class="command">R</td>
+<td class="description">Initiate or continue a rebase</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">E</td>
+<td class="description">Initiate an interactive rebase</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-15" class="outline-2">
+<div id="outline-container-sec-15" class="outline-2">
 <h2 id="sec-15">Rewriting</h2>
 <div class="outline-text-2" id="text-15">
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">r s</td><td class="left">Start a rewrite</td><td class="left"></td></tr>
-<tr><td class="left">v</td><td class="left">Revert a given commit</td><td class="left"></td></tr>
-<tr><td class="left">r t</td><td class="left">Remove bookkeeping information from buffer</td><td class="left"></td></tr>
-<tr><td class="left">r a</td><td class="left">Abort rewriting</td><td class="left"></td></tr>
-<tr><td class="left">r f</td><td class="left">Finish rewriting</td><td class="left">Applies all unused commits.</td></tr>
-<tr><td class="left">r *</td><td class="left">Toggle the * mark on a pending commit</td><td class="left"></td></tr>
-<tr><td class="left">r ..</td><td class="left">Toggle the . mark on a pending commit</td><td class="left"></td></tr>
+<tr>
+<td class="command">r s</td>
+<td class="description">Start a rewrite</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">v</td>
+<td class="description">Revert a given commit</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">r t</td>
+<td class="description">Remove bookkeeping information from buffer</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">r a</td>
+<td class="description">Abort rewriting</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">r f</td>
+<td class="description">Finish rewriting</td>
+<td class="notes">Applies all unused commits.</td>
+</tr>
+
+<tr>
+<td class="command">r *</td>
+<td class="description">Toggle the * mark on a pending commit</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">r ..</td>
+<td class="description">Toggle the . mark on a pending commit</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-16" class="outline-2">
+<div id="outline-container-sec-16" class="outline-2">
 <h2 id="sec-16">Pushing and Pulling</h2>
 <div class="outline-text-2" id="text-16">
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">P</td><td class="left">git push</td><td class="left">Uses default remote repository.</td></tr>
-<tr><td class="left">C-u P</td><td class="left">git push to specified remote repository</td><td class="left"></td></tr>
-<tr><td class="left">f</td><td class="left">git remote update</td><td class="left"></td></tr>
-<tr><td class="left">F</td><td class="left">git pull</td><td class="left"></td></tr>
+<tr>
+<td class="command">P</td>
+<td class="description">git push</td>
+<td class="notes">Uses default remote repository.</td>
+</tr>
+
+<tr>
+<td class="command">C-u P</td>
+<td class="description">git push to specified remote repository</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">C-u C-u P</td>
+<td class="description">git push to specified remote as specified branch</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">f</td>
+<td class="description">git remote update</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">F</td>
+<td class="description">git pull</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
-
-<p><br/>
-</p></div>
-
+</div>
 </div>
 
-<div id="outline-container-17" class="outline-2">
+<div id="outline-container-sec-17" class="outline-2">
 <h2 id="sec-17">Interfacing with Subversion</h2>
 <div class="outline-text-2" id="text-17">
-
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption></caption>
-<colgroup><col class="left" /><col class="left" /><col class="left" />
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
 </colgroup>
 <tbody>
-<tr><td class="left">N r</td><td class="left">git svn rebase</td><td class="left"></td></tr>
-<tr><td class="left">N c</td><td class="left">git svn dcommit</td><td class="left"></td></tr>
+<tr>
+<td class="command">N r</td>
+<td class="description">git svn rebase</td>
+<td class="notes">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="command">N c</td>
+<td class="description">git svn dcommit</td>
+<td class="notes">&#xa0;</td>
+</tr>
 </tbody>
 </table>
-
 </div>
 </div>
 </div>
-
-<div id="postamble">
-<p class="date">Date: 2013-01-15 16:02:44 EST</p>
-<p class="creator">Org version 7.8.11 with Emacs version 24</p>
-<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
-
+<div id="postamble" class="status">
+<p class="date">Created: 2015-10-30 Fri 14:12</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
